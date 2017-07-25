@@ -1,24 +1,12 @@
-# Libretto - Jekyll Theme
+# Paddle Blog
 
-Libretto is a responsive one-column Jekyll theme with classic styling and careful typographic details.
+## Run locally
 
-Based on the [Libretto Wordpress theme](https://wordpress.org/themes/libretto/).
+1. [Install Docker](https://docs.docker.com/docker-for-mac/install/)
 
-## Install and Test
+1. Run the following command inside the repo directory:
+  ```bash
+  docker run --rm -v `pwd`:/data -it -p 4000:4000 jekyll/jekyll:3.5 bash -c 'cd /data && jekyll serve --watch'
+  ```
 
-1. Download or clone the repo
-  - `git clone git@github.com:ferrolho/jekyll-theme-libretto.git`
-2. Enter the folder
-  - `cd jekyll-theme-libretto/`
-3. Start Jekyll server
-  - `jekyll serve --watch`
-4. Access via
-  - http://127.0.0.1:4000/jekyll-theme-libretto/
-
-## Demo
-
-- https://ferrolho.github.io/jekyll-theme-libretto/
-
-## Preview
-
-![Theme preview](http://i.imgur.com/2ZCmoKo.png)
+1. Open browser and visit http://localhost:4000
